@@ -38,18 +38,18 @@ Create member directory
 
 ## -Schedule- 
 #### Week 1: Public Visibility
-- [ ]Create login/register
-- [ ]Create bulletin board (like a social media feed)/ability to post
+- []Create login/register
+- []Create bulletin board (like a social media feed)/ability to post
 
 
 #### Week 2: Private (members only) and Personal (individual) Visibility
-- [ ]Create calendar of upcoming events/reminders
-- [ ]Individual personal profile page access with ability to change info
+- []Create calendar of upcoming events/reminders
+- []Individual personal profile page access with ability to change info
 
 #### Week 3:
-- [ ]Create member directory page, with ability for member opt-in or opt-out of being displayed
+- []Create member directory page, with ability for member opt-in or opt-out of being displayed
 
 #### Week 4: Finishing Touches
-- [ ]Design a logo for the association
-- [ ]CSS styling
+- []Design a logo for the association
+- []CSS styling
 # AquaAlliance
