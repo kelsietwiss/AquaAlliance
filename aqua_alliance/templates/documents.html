@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Documents{% endblock %}
+
+{% block content %}
+<nav class="navbar">
+    <div class="container-fluid mx-3">
+    <img src=""/>
+    <h1>Hi {{ user.username }}!</h1>
+    <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'documents' %}">Documents</a>
+    </div>
+</nav>
+    {% for item in list %}
+        <li>
+            <img class="doc" src="{{ item.doc.url }}"/>{{ item.title }}
+        </li>
+    {% endfor %}
+
+<!-- create thumbnails for documents
+        something like "for docs in documents, render title & link(link to whole document)" -->
+
+
+{% endblock %}

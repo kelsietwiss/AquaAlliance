@@ -1,13 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Bulletin Board{% endblock %}
 
 {% block content %}
-
-        <p>Hi there!</p>
-        <p>It works!</p>
         {% for post in posts%}
-            <li>{{ post }}</li>
+            <li class="card">{{ post }}</li>
         {% endfor %}
-
 {% endblock %}
