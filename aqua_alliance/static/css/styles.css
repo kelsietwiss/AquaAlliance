@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(87, 84, 84);
+  background-color: white;
   padding: 20px;
   border: 5px #FA877D solid;
   border-radius: 4px;
@@ -28,7 +28,7 @@ body {
 
 footer {
   background-image: linear-gradient(#3c644e, #8ccfaa);
-  height: 30px;
+  height: 100px;
   display: flex;
   margin-top: 20px;
   position: fixed;
