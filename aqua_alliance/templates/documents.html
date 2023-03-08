@@ -6,15 +6,21 @@
 <nav class="navbar">
     <div class="container-fluid mx-3">
     <img src=""/>
-    <h1>Hi {{ user.username }}!</h1>
     <a href="{% url 'home' %}" class="navbar-brand">Home</a>
     <a href="{% url 'logout' %}">Logout</a>
     <a href="{% url 'documents' %}">Documents</a>
     </div>
 </nav>
+<div class="card">
     {% for item in list %}
         <li>
-            <img class="doc" src="{{ item.doc.url }}"/>{{ item.title }}
+            <a class="doc" href="{{ item.doc.url }}"><h3>{{ item.title }}</h3></a>
         </li>
     {% endfor %}
+</div>
+<footer>
+    <a href="{% url 'home' %}" class="nav-link">Home</a>
+    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'documents' %}">Documents</a>
+</footer>
 {% endblock %}

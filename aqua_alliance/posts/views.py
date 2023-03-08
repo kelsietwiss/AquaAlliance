@@ -12,3 +12,6 @@ def home_view(request):
 def home(request):
     posts = Post.objects.all().order_by('published_date')
     return render(request, 'home.html', {'posts':posts})
+
+def about(request):
+    return render(request, "about.html")

@@ -38,8 +38,10 @@ Create member directory
 
 ## -Schedule- 
 #### Week 1: Public Visibility
-- [ ] Create login/register
-- [ ] Create bulletin board (like a social media feed)/ability to post
+- [x] Create login/register
+- [x] Create bulletin board (like a social media feed)/ability to post
+- [x] Create About Us page
+- [x] Create Document upload page and ability for admin to upload documents in the future
 
 
 #### Week 2: Private (members only) and Personal (individual) Visibility
