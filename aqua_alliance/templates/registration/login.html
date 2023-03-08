@@ -3,10 +3,25 @@
 {% block title %}Log In{% endblock %}
 
 {% block content %}
+<nav class="navbar">
+    <div class="container-fluid mx-3">
+      <img src=""/>
+      <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+      <a href="{% url 'login' %}">Log In</a>
+      <a href="{% url 'signup' %}"> Sign Up</a>
+      <a href="{% url 'about' %}">About Us</a>
+    </div>
+  </nav>
 <h2>Log In</h2>
-<form method="post">
+<form class="form" method="post">
     {% csrf_token %}
     {{ form.as_p}}
     <button type="submit">Log In</button>
 </form>
+<footer>
+    <a href="{% url 'home' %}" class="nav-link">Home</a>
+    <a href="{% url 'login' %}">Log In</a>
+    <a href="{% url 'signup' %}"> Sign Up</a>
+    <a href="{% url 'about' %}">About Us</a>
+  </footer>
 {% endblock %}

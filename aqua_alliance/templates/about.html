@@ -3,8 +3,22 @@
 {% block title %}About Us{% endblock %}
 
 {% block content %}
+<nav class="navbar">
+    <div class="container-fluid mx-3">
+        <img src="" />
+        <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+        <a href="{% url 'login' %}">Log In</a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </div>
+</nav>
 <div class="card">
     <p>Here is an about us</p>
 </div>
-
+<footer>
+    <a href="{% url 'home' %}" class="nav-link">Home</a>
+    <a href="{% url 'login' %}">Log In</a>
+    <a href="{% url 'signup' %}">Sign Up</a>
+    <a href="{% url 'about' %}">About Us</a>
+</footer>
 {% endblock %}
