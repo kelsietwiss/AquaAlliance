@@ -7,19 +7,24 @@
     <div class="container-fluid mx-3">
       <img src=""/>
       <a href="{% url 'home' %}" class="navbar-brand">Home</a>
-      <a href="{% url 'login' %}">Logout</a>
+      <a href="{% url 'login' %}">Log In</a>
+      <a href="{% url 'signup' %}"> Sign Up</a>
       <a href="{% url 'about' %}">About Us</a>
     </div>
   </nav>
-<h2>Sign Up</h2>
-<form class="form" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
-</form>
+
+<div class="card">
+    <form method="post">
+        <h2>Sign Up</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
 <footer>
     <a href="{% url 'home' %}" class="nav-link">Home</a>
     <a href="{% url 'login' %}">Log In</a>
+    <a href="{% url 'signup' %}"> Sign Up</a>
     <a href="{% url 'about' %}">About Us</a>
   </footer>
 {% endblock %}

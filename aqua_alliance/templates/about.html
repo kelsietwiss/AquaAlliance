@@ -3,6 +3,26 @@
 {% block title %}About Us{% endblock %}
 
 {% block content %}
+    {% if user.is_authenticated %}
+    <nav class="navbar">
+        <div class="container-fluid mx-3">
+            <img src="" />
+            <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+            <a href="{% url 'logout' %}">Log Out</a>
+            <a href="{% url 'documents' %}">Documents</a>
+            <a href="{% url 'about' %}">About Us</a>
+        </div>
+    </nav>
+    <div class="card">
+        <img id="about" src="{{about.doc.url }}">
+    </div>
+    <footer>
+        <a href="{% url 'home' %}" class="nav-link">Home</a>
+        <a href="{% url 'logout' %}">Log Out</a>
+        <a href="{% url 'documents' %}">Documents</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </footer>
+    {% else %}
 <nav class="navbar">
     <div class="container-fluid mx-3">
         <img src="" />
@@ -13,7 +33,7 @@
     </div>
 </nav>
 <div class="card">
-    <p>Here is an about us</p>
+        <img id="about" src="{{about.doc.url }}">
 </div>
 <footer>
     <a href="{% url 'home' %}" class="nav-link">Home</a>
@@ -21,4 +41,5 @@
     <a href="{% url 'signup' %}">Sign Up</a>
     <a href="{% url 'about' %}">About Us</a>
 </footer>
+{% endif %}
 {% endblock %}
