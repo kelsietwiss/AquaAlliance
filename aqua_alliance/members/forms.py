@@ -9,6 +9,7 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ("username", "email")
 
 
+
 class CustomUserChangeForm(UserChangeForm):
 
     class Meta:

@@ -6,39 +6,48 @@
     {% if user.is_authenticated %}
     <nav class="navbar">
         <div class="container-fluid mx-3">
-            <img src="" />
-            <a href="{% url 'home' %}" class="navbar-brand">Home</a>
-            <a href="{% url 'logout' %}">Log Out</a>
-            <a href="{% url 'documents' %}">Documents</a>
-            <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'bulletin' %}">Bulletin</a>
+        <a href="{% url 'events' %}">Events</a>
+        <a href="{% url 'documents' %}">Documents</a>
+        <img id="logo" src="{{ '/static/TW_logo.jpg' }}">
         </div>
     </nav>
     <div class="card">
-        <img id="about" src="{{about.doc.url }}">
+        <div id="about">
+            <h2>About the Tulalip Wood Water Association</h2>
+        <p>Hello and welcome to our page, this is a page about some things about water and wells and whatnot and stuff.</p>
+        <p>This is some more stuff about us, and water and the association about water and wells and water.</p>
+        </div>
+        
     </div>
     <footer>
-        <a href="{% url 'home' %}" class="nav-link">Home</a>
+        <a href="{% url 'about' %}">About</a>
         <a href="{% url 'logout' %}">Log Out</a>
-        <a href="{% url 'documents' %}">Documents</a>
-        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'password_reset' %}">Reset Password</a>
     </footer>
+
     {% else %}
+
 <nav class="navbar">
     <div class="container-fluid mx-3">
         <img src="" />
-        <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+        <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'login' %}">Log In</a>
         <a href="{% url 'signup' %}">Sign Up</a>
         <a href="{% url 'about' %}">About Us</a>
+        <img id="logo" src="{{ '/static/TW_logo.jpg' }}">
     </div>
 </nav>
 <div class="card">
-        <img id="about" src="{{about.doc.url }}">
-</div>
+        <h2>About the Tulalip Wood Water Association</h2>
+        <p>Hello and welcome to our page, this is a page about some things about water and wells and whatnot and stuff.</p>
+        <p>This is some more stuff about us, and water and the association about water and wells and water.</p>
+</div>  
 <footer>
-    <a href="{% url 'home' %}" class="nav-link">Home</a>
+    <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'login' %}">Log In</a>
-    <a href="{% url 'signup' %}">Sign Up</a>
+    <a href="{% url 'signup' %}"> Sign Up</a>
     <a href="{% url 'about' %}">About Us</a>
 </footer>
 {% endif %}

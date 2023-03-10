@@ -34,24 +34,33 @@ Create member directory
 #### Model for Post 
 - Text
 - Image (optional)
+- Date Created
+- Date Published
+- Author
+#### Model for Event
+- Text
+- Image (optional)
+- Date of Event
+- Date Created
+- Date Published
+- Author
+#### Model for Document Upload
+- Document
+- Title
+- Created Date
+- Published Date
+- Author
 
 
 ## -Schedule- 
 #### Week 1: Public Visibility
 - [x] Create login/register
-- [x] Create bulletin board (like a social media feed)/ability to post
 - [x] Create About Us page
-- [x] Create Document upload page and ability for admin to upload documents in the future
-
-
-#### Week 2: Private (members only) and Personal (individual) Visibility
-- [ ] Create calendar of upcoming events/reminders
-- [ ] Individual personal profile page access with ability to change info
-
-#### Week 3:
-- [ ] Create member directory page, with ability for member opt-in or opt-out of being displayed
-
-#### Week 4: Finishing Touches
-- [ ] Design a logo for the association
-- [ ] CSS styling
+- [x] Create page of upcoming events/reminders
+- [x] Create bulletin board (like a social media feed)/ability to post (admin only)
+- [x] Create Document upload page and ability for admin to upload     documents in the future
+- [ ] Password Reset ability
+- [ ] Email admin ability
+- [x] Design a logo for the association
+- [x] CSS styling
 # AquaAlliance
