@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<nav class="navbar">
+  <div class="container-fluid mx-3">
+  <a href="{% url 'home' %}">Home</a>
+  <a href="{% url 'bulletin' %}">Bulletin</a>
+  <a href="{% url 'events' %}">Events</a>
+  <a href="{% url 'documents' %}">Documents</a>
+  <img id="logo" src="{{ '/static/TW_logo.jpg' }}">
+  </div>
+</nav>
+
+<form method="post">
+    <h1>Success! Thank you for contacting us!</h1>
+</form>
+
+<footer>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'logout' %}">Log Out</a>
+    <a href="{% url 'password_reset' %}">Reset Password</a>
+    <a href="{% url 'contact' %}">Contact</a>
+</footer>
+{% endif %}
+{% endblock %}

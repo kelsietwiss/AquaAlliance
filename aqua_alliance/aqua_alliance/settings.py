@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "sendemail.apps.SendemailConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -137,5 +138,6 @@ AUTH_USER_MODEL = "members.CustomUser"
 LOGIN_REDIRECT_URL = "bulletin"
 LOGOUT_REDIRECT_URL = "home"
 
+DEFAULT_FROM_EMAIL = "will@wsvincent.com"
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
