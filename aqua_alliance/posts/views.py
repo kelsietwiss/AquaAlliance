@@ -6,9 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def about(request):
-    list = DocModel.objects.all().order_by('-published_date')
-    about = DocModel.objects.get(title="About")
-    return render(request, "about.html", {"about":about})
+    return render(request, "about.html")
 
 
 def home(request):

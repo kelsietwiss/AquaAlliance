@@ -6,7 +6,7 @@ from django.urls import reverse
 # Create your models here.
 
 class DocModel(models.Model):
-    doc = models.ImageField(upload_to='images/')
+    doc = models.FileField(upload_to='images/')
     title = models.TextField(max_length=128, null=True, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
