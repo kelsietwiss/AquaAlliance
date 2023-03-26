@@ -6,9 +6,6 @@ html {
     background-size: cover;
 }
 
-
-
-
 .navbar {
     margin-bottom: 30px;
     padding: 20px;
@@ -81,8 +78,9 @@ form {
     text-align: left;
     width: 80%;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 5px;   
 }
+
 form li {
     text-align: left;
     border: 2px solid rgb(59, 59, 59);
